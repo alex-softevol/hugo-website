@@ -1,0 +1,55 @@
+.header__main-menu-burger { /* Burger is not needed if it is not a mobile version and javascript is not connected. */
+  display: none;
+}
+
+@media (max-width: 1439px) {
+  .main-menu,
+  .login-links__item {
+    float: none;
+  }
+
+  .login-button{
+    display: inline-block;
+  }
+
+  .header__main-menu-container {
+    /* margin top 8 + 20 + 8  must be equal to element with max height in header */
+    margin: 36px 0 0 0;
+  }
+
+  .main-menu__item {
+    display: block;
+    float: none; /* Menu items will line up one above the other. */
+    border-bottom: 1px solid #243448;
+  }
+
+  .main-menu__link {
+    display: block;
+  }
+
+  .js .header__main-menu-container { /* Logo with js is static, and margin is no needed anymore. */
+    margin: 0;
+  }
+
+  .js .header__main-menu-burger {
+    display: block;
+    /* Coincidentally, the height of the button is equal to the height of the logo, and there is no need to center the button. But if it were not so, you need to add padding for the container. */
+    position: absolute;
+    top: 8px;
+    right: 8px;
+  }
+
+  .js .header__logo {
+    /* The button has appeared, and it has absolute positioning. To prevent the logo from running over the button, we will return static positioning to it. */
+    position: static;
+    display: block;
+  }
+
+  .js .header__main-menu-container { /* Default class for menu (with js). */
+    display: none;
+  }
+
+  .js .header__main-menu-container--opened { /* Class for opened menu. */
+    display: block;
+  }
+}

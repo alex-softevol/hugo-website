@@ -1,0 +1,39 @@
+.button-container { 
+  zoom: 1; 
+}
+
+.button-container:before,
+.button-container:after { 
+  content: "";
+  display: table; 
+}
+
+.button-container:after {
+  clear: both; 
+}
+
+.button-container--center {
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@supports (display: flex) {
+  .button-container::before,
+  .button-container::after {
+    content: none;
+  }
+  .button-container {
+    display: flex;
+  }
+  
+  .button-container--center {
+    justify-content: center;
+  }
+}
+
+.button-container button,
+.button-container a {
+  display: block;
+  float: left;
+}

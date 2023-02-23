@@ -1,0 +1,30 @@
+.button {
+  display: block;
+  position: relative;
+  background-color: #040E18;
+  border-radius: 70px;
+  border: 2px solid transparent;
+  touch-action: manipulation;
+  background-clip: padding-box;
+  transition: all 0.4s 0s;
+  box-shadow: 0px 6px 22px rgb(6 34 51 / 22%);
+}
+
+.button::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: -2px;
+  background: linear-gradient(90deg, rgba(0, 196, 244, 1) 0%, rgba(4, 12, 21, 1) 49%, rgba(0, 196, 244, 1) 100%);
+  border-radius: 70px;
+  transition: all 0.4s ease 0s;
+  z-index: -1;
+}
+
+.button:hover {
+  border-color: #00C4F4;
+  color: #00C4F4;
+}

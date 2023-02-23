@@ -1,0 +1,16 @@
+<div class="container-100_50_33_33_33">
+  <div class="buffer-big">
+    <div class="featured-card">
+      <div class="buffer-big">
+        <div class="featured-card__img">
+          <picture>
+            <source type="image/svg+xml" srcset="/images/{{.Get "img"}}.svg">
+            <img src="/images/{{.Get "img"}}.png" width="38" height="38" alt="{{.Get "title"}}">
+          </picture>
+        </div>
+      </div>
+      <h3>{{.Get "title"}}</h3>
+      <p>{{.Get "text"}}</p>
+    </div>
+  </div>
+</div>

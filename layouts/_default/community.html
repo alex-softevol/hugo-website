@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Community</title>
+  <meta name="description" content="Our community.">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Menu -->
+  <link rel="stylesheet" href="/css/contact.css">
+
+  {{ partial "js-head.html" . }}
+
+</head>
+<body>
+
+  {{ partial "header.html" . }}
+
+  <div class="main">
+    <main>
+      
+      <div class="section section-60-120 section--gray">
+        <section>
+          <div class="max-width-default default">
+            <h1 class="text-center">{{ .Title }}</h1>
+            <div class="responsive">
+              
+              {{ .Content }}
+
+            </div>
+            <div class="spacer-60"></div>
+            <h2 class="text-center">CONTACT US</h2>
+            <form>
+              <div class="buffer-big-half">
+                <label class="visually-hidden" for="name">Name</label>
+                <input name="contact-name" type="text" id="contact-name" placeholder="Name">
+              </div>
+              <div class="buffer-big-half">
+                <label class="visually-hidden" for="contact-email">Email</label>
+                <input name="contact-email" type="mail" id="contact-email" placeholder="Email">
+              </div>
+              <div class="buffer-big-half">
+                <label class="visually-hidden" for="contact-text">Text</label>
+                <textarea name="contact-text" id="contact-text" placeholder="Message"></textarea>
+              </div>
+              <div class="buffer-big-half">
+                <button class="button-blue" type="submit">SUBMIT</button>
+              </div>
+            </form>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  {{ partial "footer.html" . }}
+
+  <script src="/js/index.js"></script>
+</body>
+</html>

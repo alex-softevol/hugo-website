@@ -1,0 +1,20 @@
+<script>
+  (function() {
+    var html = document.getElementsByTagName('html')[0];
+
+    if(html) {
+      html.className += html.className ? " js" : "js";
+    }
+
+    if (typeof SVGRect !== "undefined") {
+      html.className +=html.className ? " svg" : "svg";
+      window.svg = true;
+    }
+
+    window.animation = false;
+    if(document.createElement('div').style.animationName !== undefined && Element.prototype.closest) { 
+      window.animation = true;
+      html.classList.add('animation-supported');
+    }
+  })();
+</script>
