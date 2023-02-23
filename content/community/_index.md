@@ -4,7 +4,7 @@ title: Community
 subtitle: Contact us
 ---
 
-{{< community_card link="https://forum.fishingplanet.com/" img="ozL1-3fibg-207" alt="Fishing Planet Forum" >}}
+{{< community_card link="https://google.com/" img="ozL1-3fibg-207" alt="Fishing Planet Forum" >}}
 
 {{< community_card link="https://discord.com/" img="oZc8uQ29Lk-800" alt="Discord" >}}
 
