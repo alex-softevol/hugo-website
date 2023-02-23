@@ -1,0 +1,54 @@
+
+.burger-button {
+  width: 18px;
+  height: 12px;
+  padding: 13px 10px;
+  background-color: transparent;
+  border: 1px solid transparent;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxOCAxMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzI2N18yNTcwKSI+CjxwYXRoIGQ9Ik0wIDEySDE4VjEwSDBWMTJaTTAgN0gxOFY1SDBWN1pNMCAwVjJIMThWMEgwWiIgZmlsbD0id2hpdGUiLz4KPC9nPgo8ZGVmcz4KPGNsaXBQYXRoIGlkPSJjbGlwMF8yNjdfMjU3MCI+CjxyZWN0IHdpZHRoPSIxOCIgaGVpZ2h0PSIxMiIgZmlsbD0id2hpdGUiLz4KPC9jbGlwUGF0aD4KPC9kZWZzPgo8L3N2Zz4K");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 18px 12px;
+  border-radius: 2px;
+  box-sizing: content-box;
+}
+
+.burger-button--opened {
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAxNCAxNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzI2N18yNTcyKSI+CjxwYXRoIGQ9Ik0xNCAxLjQxTDEyLjU5IDBMNyA1LjU5TDEuNDEgMEwwIDEuNDFMNS41OSA3TDAgMTIuNTlMMS40MSAxNEw3IDguNDFMMTIuNTkgMTRMMTQgMTIuNTlMOC40MSA3TDE0IDEuNDFaIiBmaWxsPSJ3aGl0ZSIvPgo8L2c+CjxkZWZzPgo8Y2xpcFBhdGggaWQ9ImNsaXAwXzI2N18yNTcyIj4KPHJlY3Qgd2lkdGg9IjE0IiBoZWlnaHQ9IjE0IiBmaWxsPSJ3aGl0ZSIvPgo8L2NsaXBQYXRoPgo8L2RlZnM+Cjwvc3ZnPgo=");
+}
+
+.burger-button:hover,
+.burger-button.hover {
+    background-color: #505D68;
+}
+
+.burger-button:focus,
+.burger-button.focus {
+    border-color: #505D68;
+    outline: none;
+}
+
+.burger-button:focus:not(:focus-visible) {
+  border-color: transparent;
+  outline: none;
+}
+
+.burger-button:focus-visible,
+.burger-button.focus-visible {
+    border-color: #505D68;
+    outline: none;
+}
+
+.burger-button:disabled,
+.burger-button.disabled {
+    opacity: 0.3;
+    cursor: default;
+}
+
+.burger-button:active,
+.burger-button.active {
+    background-color: #505D68;
+    outline: none;
+    border-color: transparent;
+}

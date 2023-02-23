@@ -1,0 +1,88 @@
+
+/* logo */
+
+.header__logo {
+  position: absolute;
+  top: 19px; /* .header__container padding not calculated */
+  left: 8px;
+}
+
+.logo a {
+  display: block;
+  padding: 8px;
+}
+
+.logo a img {
+  display: block; /* normalize geometry img inside a */
+  width: 200px;
+  height: 69px;
+}
+
+/* main-menu */
+
+.header__main-menu-container {
+  margin: 0 233px 0 128px; /* spaces for absolutely positioned logo/socials. */
+}
+
+.main-menu {
+  margin: 0;
+  padding: 0;
+}
+
+.main-menu__item {
+  padding: 0 16px;
+  display: block;
+  float: left;
+}
+
+.main-menu__link {
+  white-space: nowrap;
+}
+
+/* social */
+
+.header__login-links { /* TODO maybe rename to social links */
+  margin: 0;
+  padding: 0;
+}
+
+.header__main-menu-container:before,
+.header__main-menu-container:after,
+.main-menu:before,
+.main-menu:after,
+.header__login-links:before,
+.header__login-links:after { 
+  content: "";
+  display: table; 
+}
+
+.header__main-menu-container:after,
+.header__login-links:after,
+.main-menu:after {
+  clear: both; 
+}
+
+.header__main-menu-container,
+.header__login-links,
+.main-menu { 
+  zoom: 1; 
+}
+
+.main-menu,
+login-links {
+  float: left;
+}
+
+.login-links__item {
+  padding: 8px;
+  float: left;
+}
+
+.login-link {
+  display: block;
+}
+
+.login-link img {
+  display: block;
+  width: auto;
+}

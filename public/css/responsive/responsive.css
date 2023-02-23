@@ -1,0 +1,24 @@
+.responsive { 
+  zoom: 1; 
+}
+
+.responsive:before,
+.responsive:after { 
+  content: "";
+  display: table; 
+}
+
+.responsive:after {
+  clear: both; 
+}
+
+@supports (display: flex) {
+  .responsive::before,
+  .responsive::after {
+    content: none;
+  }
+  .responsive {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
